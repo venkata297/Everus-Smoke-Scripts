@@ -55,7 +55,8 @@ public class Test_Allbuttons {
     	Properties.userpassword.sendKeys("Test@345");
     	
     }
-    @Test(priority=3)
+    @SuppressWarnings("unlikely-arg-type")
+	@Test(priority=3)
     public void verifysendtoken(){
     	
     	try{    	
@@ -68,7 +69,8 @@ public class Test_Allbuttons {
     		System.out.println("exception is" +e);
     	}
         }
-    @Test(priority=4)
+    @SuppressWarnings("unlikely-arg-type")
+	@Test(priority=4)
     public void verifysendbutton(){
     	try{  
     		JavascriptExecutor js= (JavascriptExecutor)driver;
@@ -84,7 +86,8 @@ public class Test_Allbuttons {
         		System.out.println("exception is" +e);
         	}
        }
-    @Test(priority=5)
+    @SuppressWarnings("unlikely-arg-type")
+	@Test(priority=5)
     public void verifyusersettings(){
     	try{
     	driver.findElement(By.linkText(" Return to Dashboard")).click();
